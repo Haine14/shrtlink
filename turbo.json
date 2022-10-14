@@ -1,0 +1,31 @@
+{
+	"baseBranch": "origin/main",
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+		"clean": {
+			"cache": false,
+			"outputs": []
+		},
+		"lint": {
+			"outputs": []
+		},
+		"migrations": {
+			"outputs": []
+		},
+		"style": {
+			"outputs": []
+		},
+		"test": {
+			"outputs": []
+		},
+		"test:coverage": {
+			"outputs": []
+		},
+		"test:e2e": {
+			"outputs": []
+		}
+	}
+}
