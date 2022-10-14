@@ -1,5 +1,5 @@
 {
-	"name": "@zws.im/api",
+	"name": "@shrtlink/api",
 	"version": "2.20.9",
 	"private": true,
 	"bugs": {
@@ -11,9 +11,9 @@
 	},
 	"license": "Apache-2.0",
 	"author": {
-		"name": "Jonah Snider",
-		"email": "jonah@jonah.pw",
-		"url": "https://jonahsnider.com"
+		"name": "Haine14",
+		"email": "amartukimin@yandex.com",
+		"url": "https://github.com/Haine14"
 	},
 	"type": "commonjs",
 	"main": "./dist/src/main.js",

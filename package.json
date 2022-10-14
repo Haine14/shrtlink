@@ -1,20 +1,15 @@
 {
-	"name": "@zws.im/zws",
+	"name": "shrtlink",
 	"version": "0.0.0-development",
 	"private": true,
 	"bugs": {
-		"url": "https://github.com/zws-im/zws/issues"
+		"url": "https://github.com/Haine14/shrtlink/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/zws-im/zws.git"
+		"url": "git+https://github.com/Haine14/shrtlink.git"
 	},
 	"license": "Apache-2.0",
-	"author": {
-		"name": "Jonah Snider",
-		"email": "jonah@jonah.pw",
-		"url": "https://jonahsnider.com"
-	},
 	"type": "module",
 	"workspaces": [
 		"packages/*",
@@ -25,11 +20,16 @@
 		"clean": "turbo run clean",
 		"lint": "turbo run lint --",
 		"migrations": "prisma migrate deploy",
-		"start": "yarn workspace @zws.im/api start",
+		"start": "yarn workspace @shrtlink/api start",
 		"style": "turbo run style --",
 		"style-prisma": "yarn run prisma format && git diff --exit-code -s prisma/schema.prisma",
 		"test": "yarn validate-prisma && yarn style-prisma && turbo run build style lint test test:e2e",
 		"validate-prisma": "prisma validate"
+	},
+	"author": {
+		"name": "Haine14",
+		"email": "amartukimin@yandex.com",
+		"url": "https://github.com/Haine14"
 	},
 	"prettier": "@jonahsnider/prettier-config",
 	"dependencies": {

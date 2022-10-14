@@ -1079,9 +1079,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@google-cloud/profiler@patch:@google-cloud/profiler@npm:5.0.2#.yarn/patches/@google-cloud-profiler-npm-5.0.2-f2d85fda64.patch::locator=%40zws.im%2Fzws%40workspace%3A.":
+"@google-cloud/profiler@patch:@google-cloud/profiler@npm:5.0.2#.yarn/patches/@google-cloud-profiler-npm-5.0.2-f2d85fda64.patch::locator=shrtlink%40workspace%3A.":
   version: 5.0.2
-  resolution: "@google-cloud/profiler@patch:@google-cloud/profiler@npm%3A5.0.2#.yarn/patches/@google-cloud-profiler-npm-5.0.2-f2d85fda64.patch::version=5.0.2&hash=0bba9a&locator=%40zws.im%2Fzws%40workspace%3A."
+  resolution: "@google-cloud/profiler@patch:@google-cloud/profiler@npm%3A5.0.2#.yarn/patches/@google-cloud-profiler-npm-5.0.2-f2d85fda64.patch::version=5.0.2&hash=0bba9a&locator=shrtlink%40workspace%3A."
   dependencies:
     "@google-cloud/common": ^4.0.0
     "@google-cloud/logging-min": ^10.0.0
@@ -2039,6 +2039,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shrtlink/api@workspace:apps/api":
+  version: 0.0.0-use.local
+  resolution: "@shrtlink/api@workspace:apps/api"
+  dependencies:
+    "@google-cloud/profiler": 5.0.2
+    "@jonahsnider/prettier-config": 1.1.2
+    "@jonahsnider/util": 9.0.1
+    "@jonahsnider/xo-config": 5.2.0
+    "@nestjs/cli": 9.1.4
+    "@nestjs/common": 9.1.4
+    "@nestjs/config": 2.2.0
+    "@nestjs/core": 9.1.4
+    "@nestjs/platform-express": 9.1.4
+    "@nestjs/schematics": 9.0.3
+    "@nestjs/swagger": 6.1.2
+    "@nestjs/terminus": 9.1.2
+    "@nestjs/testing": 9.1.4
+    "@prisma/client": 4.4.0
+    "@sentry/node": 7.15.0
+    "@tsconfig/node16": 1.0.3
+    "@types/express": 4.17.14
+    "@types/jest": 29.1.2
+    "@types/node": 16.11.65
+    "@types/supertest": 2.0.12
+    change-case: 4.1.2
+    class-transformer: 0.5.1
+    class-validator: 0.13.2
+    consola: 2.15.3
+    dotenv: 16.0.3
+    express: 4.18.2
+    jest: 29.1.2
+    millify: 5.0.1
+    prettier: 2.7.1
+    prisma: 4.4.0
+    reflect-metadata: 0.1.13
+    rxjs: 7.5.7
+    supertest: 6.3.0
+    swagger-ui-express: 4.5.0
+    ts-jest: 29.0.3
+    ts-node: 10.9.1
+    tslib: 2.4.0
+    type-fest: 3.1.0
+    typescript: 4.8.4
+    xo: 0.52.4
+    yn: 4.0.0
+    zod: 3.19.1
+  languageName: unknown
+  linkType: soft
+
 "@sinclair/typebox@npm:^0.24.1":
   version: 0.24.19
   resolution: "@sinclair/typebox@npm:0.24.19"
@@ -2778,68 +2827,6 @@ __metadata:
   checksum: 8ed0d477ce3bc9c6fe2bf6a6a2cc316bb9c4127c5a7827bae947fa8ec34c7092395c5a283cc300c05b5fa01cbbfa1f938f410a7bf75db7c7846fea41949989ec
   languageName: node
   linkType: hard
-
-"@zws.im/api@workspace:apps/api":
-  version: 0.0.0-use.local
-  resolution: "@zws.im/api@workspace:apps/api"
-  dependencies:
-    "@google-cloud/profiler": 5.0.2
-    "@jonahsnider/prettier-config": 1.1.2
-    "@jonahsnider/util": 9.0.1
-    "@jonahsnider/xo-config": 5.2.0
-    "@nestjs/cli": 9.1.4
-    "@nestjs/common": 9.1.4
-    "@nestjs/config": 2.2.0
-    "@nestjs/core": 9.1.4
-    "@nestjs/platform-express": 9.1.4
-    "@nestjs/schematics": 9.0.3
-    "@nestjs/swagger": 6.1.2
-    "@nestjs/terminus": 9.1.2
-    "@nestjs/testing": 9.1.4
-    "@prisma/client": 4.4.0
-    "@sentry/node": 7.15.0
-    "@tsconfig/node16": 1.0.3
-    "@types/express": 4.17.14
-    "@types/jest": 29.1.2
-    "@types/node": 16.11.65
-    "@types/supertest": 2.0.12
-    change-case: 4.1.2
-    class-transformer: 0.5.1
-    class-validator: 0.13.2
-    consola: 2.15.3
-    dotenv: 16.0.3
-    express: 4.18.2
-    jest: 29.1.2
-    millify: 5.0.1
-    prettier: 2.7.1
-    prisma: 4.4.0
-    reflect-metadata: 0.1.13
-    rxjs: 7.5.7
-    supertest: 6.3.0
-    swagger-ui-express: 4.5.0
-    ts-jest: 29.0.3
-    ts-node: 10.9.1
-    tslib: 2.4.0
-    type-fest: 3.1.0
-    typescript: 4.8.4
-    xo: 0.52.4
-    yn: 4.0.0
-    zod: 3.19.1
-  languageName: unknown
-  linkType: soft
-
-"@zws.im/zws@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@zws.im/zws@workspace:."
-  dependencies:
-    "@changesets/changelog-github": 0.4.7
-    "@changesets/cli": 2.25.0
-    "@jonahsnider/prettier-config": 1.1.2
-    prettier: 2.7.1
-    prisma: 4.4.0
-    turbo: 1.5.5
-  languageName: unknown
-  linkType: soft
 
 "abbrev@npm:1":
   version: 1.1.1
@@ -10233,6 +10220,19 @@ __metadata:
   checksum: 7babc46f732a98f4c054ec1f048b55b9149b98aa2da32f6cf9844c434b43c6251efebd6eec120937bd0999e13811ebd45efe17410edb3ca938f82f9381302748
   languageName: node
   linkType: hard
+
+"shrtlink@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "shrtlink@workspace:."
+  dependencies:
+    "@changesets/changelog-github": 0.4.7
+    "@changesets/cli": 2.25.0
+    "@jonahsnider/prettier-config": 1.1.2
+    prettier: 2.7.1
+    prisma: 4.4.0
+    turbo: 1.5.5
+  languageName: unknown
+  linkType: soft
 
 "side-channel@npm:^1.0.4":
   version: 1.0.4
